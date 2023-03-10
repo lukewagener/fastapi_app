@@ -39,3 +39,10 @@ def execute_query(query):
 @app.get('/', tags=["root"])
 async def read_root() -> dict:
     return {"msg": "Hello World"}
+
+# GET using Database
+@app.get('/properties')
+async def get_properties():
+        query = 'SELECT * FROM properties'
+        result = execute_query(query)
+        return result
