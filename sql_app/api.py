@@ -1,15 +1,16 @@
-from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import pymysql
 
-# SQLALCHEMY_DATABASE_URL = "sqlite:///./sql_app.db"
-# SQLALCHEMY_DATABASE_URL = "postgresql://user:password@postgresserver/db"
-SQLALCHEMY_DATABASE_URL = mysql+mysqlconnector://root:pass@localhost/gryd_db
+app = FastAPI()
 
-engine = create_engine(
-    SQLALCHEMY_DATABASE_URL
-)
+# Database connection details
+db_config = {
+    'host': 'localhost',
+    'user': 'gryd_dev',
+    'password': 'password',
+    'database': 'gryd_db'
+}
 
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
-Base = declarative_base()
+# Connect to the database
+conn = pymysql.connect(**db_config)
