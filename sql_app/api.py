@@ -4,6 +4,20 @@ import pymysql
 
 app = FastAPI()
 
+origins = [
+    "http://localhost:3000",
+    "localhost:3000"
+]
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
+
 # Database connection details
 db_config = {
     'host': 'localhost',
@@ -14,3 +28,14 @@ db_config = {
 
 # Connect to the database
 conn = pymysql.connect(**db_config)
+
+def execute_query(query):
+    cursor = conn.cursor()
+    cursor.execute(query)
+    result = cursor.fetchall()
+    cursor.close()
+    return result
+
+@app.get('/', tags=["root"])
+async def read_root() -> dict:
+    return {"msg": "Hello World"}
