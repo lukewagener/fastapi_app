@@ -1,37 +1,41 @@
 from pydantic import BaseModel
 
-class Properties(BaseModel):
-    PropertyGuid: str
-    ZoneGuid: str
-    PropertyName: str
-    ZoneGuid: str
-    PropertyName: str
-    ZoneName: str
-    Address: str
-    Postal code: str
-    Latitude: float
-    Longitude: float
-    Covered Parking: bool
-    Electric charger for EV: bool
-    Block Heater: bool
-    Rating: float
-    ReservationCount: int
-    ReservedHours: int
-    SpotCount: int
+class PropertiesBase(BaseModel):
+    zoneGuid: str
+    propertyName: str
+    zoneGuid: str
+    propertyName: str
+    zoneName: str
+    address: str
+    postalCode: str
+    latitude: float
+    longitude: float
+    coveredParking: bool
+    electricCharger: bool
+    blockHeater: bool
+    rating: float
+    reservationCount: int
+    reservedHours: int
+    spotCount: int
+
+class Properties(PropertiesBase):
+    propertyGuid: str
 
     class Config:
         orm_mode = True
 
-class Zones(BaseModel):
-    PropertyName: str
-    ZoneGuid: str
-    ZoneName: str
-    Hourly: float
-    Daily rate: float
-    Evening rate: int
-    24/7: int
-    Commuter: int
-    Evenings & Weekends: int
+class ZonesBase(BaseModel):
+    propertyName: str
+    zoneName: str
+    hourly: float
+    dailyRate: float
+    eveningRate: int
+    fullRate: int
+    commuter: int
+    eveningsWeekends: int
+
+class Zones(ZonesBase):
+    zoneGuid: str
 
     class Config:
         orm_mode = True
