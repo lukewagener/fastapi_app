@@ -1,7 +1,4 @@
-from fastapi import FastAPI
-# from fastapi.middleware.cors import CORSMiddleware
-# import pymysql
-
+from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 from . import read, models, schemas
 from .database import SessionLocal, engine
@@ -9,48 +6,6 @@ from .database import SessionLocal, engine
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
-
-# origins = [
-#     "http://localhost:3000",
-#     "localhost:3000"
-# ]
-
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"]
-# )
-
-# Database connection details
-# db_config = {
-#     'host': 'localhost',
-#     'user': 'gryd_dev',
-#     'password': 'password',
-#     'database': 'gryd_db'
-# }
-
-# Connect to the database
-# conn = pymysql.connect(**db_config)
-
-# def execute_query(query):
-#     cursor = conn.cursor()
-#     cursor.execute(query)
-#     result = cursor.fetchall()
-#     cursor.close()
-#     return result
-
-# @app.get('/', tags=["root"])
-# async def read_root() -> dict:
-#     return {"msg": "Hello World"}
-
-# GET using Database
-# @app.get('/properties')
-# async def get_properties():
-#         query = 'SELECT * FROM properties'
-#         result = execute_query(query)
-#         return result
 
 # Dependency
 def get_db():
@@ -60,7 +15,7 @@ def get_db():
     finally:
         db.close()
 
-@app.get("/properties/", response_model=list[schemas.Properties])
-def read_properties(skip: int = 0, db: Session = Depends(get_db)):
-    properties = read.get_properties(db, skip=skip)
-    return properties
+@app.get("/spots/", response_model=list[schemas.Spots])
+def read_spots(skip: int = 0, db: Session = Depends(get_db)):
+    spots = read.get_spots(db, skip=skip)
+    return spots
