@@ -1,9 +1,10 @@
 from pydantic import BaseModel
 
-class PropertiesBase(BaseModel):
+class SpotsBase(BaseModel):
+    propertyGuid: str
     zoneGuid: str
     propertyName: str
-    zoneGuid: str
+    zoneName: str
     propertyName: str
     zoneName: str
     address: str
@@ -18,24 +19,22 @@ class PropertiesBase(BaseModel):
     reservedHours: int
     spotCount: int
 
-class Properties(PropertiesBase):
-    propertyGuid: str
-
+class Spots(SpotsBase):
     class Config:
         orm_mode = True
 
+
 class ZonesBase(BaseModel):
+    zoneGuid: str
     propertyName: str
     zoneName: str
-    hourly: float
-    dailyRate: float
-    eveningRate: int
-    fullRate: int
+    rateHourly: float
+    rateDaily: float
+    rateEvening: int
+    rateFull: int
     commuter: int
     eveningsWeekends: int
 
 class Zones(ZonesBase):
-    zoneGuid: str
-
     class Config:
         orm_mode = True
