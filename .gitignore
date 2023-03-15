@@ -1,5 +1,5 @@
 # Files (or folders) to be ignored
 
-sql_app/__pycache__/*
+/__pycache__/
 *.sql
 settings.json
