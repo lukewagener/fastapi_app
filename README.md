@@ -1,5 +1,5 @@
 # fastapi_app
-Little app I cooked up using FastAPI/SQLAlchemy/Pymysql 
+Little Python app I cooked up using FastAPI/SQLAlchemy/Pymysql 
 to connect to a dummy database of parking spots.
 
 # DB
