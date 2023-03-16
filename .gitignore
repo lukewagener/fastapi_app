@@ -1,5 +1,6 @@
 # Files (or folders) to be ignored
 
-/__pycache__/
+.vscode/settings.json
+sql_app/__pycache__/
+venv/
 *.sql
-settings.json
