@@ -43,7 +43,9 @@ c1. before initializing the backend, make sure that you have these packages inst
 
 c2. initialize the API/Backend by running the Apache & MySQL modules in the Xampp control panel
 
-c3. inside the terminal, enter and run 'python main.py' command
+c3. inside terminal, enter 'source venv/scripts/activate' command to activate python virtual environment
+
+c4. finally, still inside terminal, enter and run 'python main.py' command
 
 # D. Check API Endpoints
 
