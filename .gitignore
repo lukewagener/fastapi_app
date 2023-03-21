@@ -4,3 +4,4 @@
 sql_app/__pycache__/
 venv/
 *.sql
+*.csv
