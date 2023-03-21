@@ -1,10 +1,10 @@
 # GRYDBackend Technical Manual
 
-WI2023 term ACE team used Xampp/phpMyAdmin to manage the MySQL database (locally)
+-WI2023 term ACE team used Xampp/phpMyAdmin to manage the MySQL database (locally)
 
 # ~ Terminologies
 
-db - short for database
+DB - short for database
 
 Spots - pins / markers; can also mean the first table in the database
 
