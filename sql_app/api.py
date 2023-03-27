@@ -35,8 +35,8 @@ def read_zones(skip: int = 0, db: Session = Depends(get_db)):
     return zones
 
 # FrontEnd Default View (Pins on the Map)
-@app.get("/spots/", response_model=list[schemas.Spots])
-def read_spots(skip: int = 0, db: Session = Depends(get_db)):
+@app.get("/spots", response_model=list[schemas.Spots])
+async def read_spots(skip: int = 0, db: Session = Depends(get_db)):  
     spots = read.get_spots(db, skip=skip)
     return spots
 
