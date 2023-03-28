@@ -4,6 +4,8 @@ from . import read, models, schemas
 from .database import SessionLocal, engine
 from fastapi.middleware.cors import CORSMiddleware
 
+from stub import get_data
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
@@ -45,3 +47,10 @@ async def read_spots(skip: int = 0, db: Session = Depends(get_db)):
 def read_zone(zoneGuid: str, db: Session = Depends(get_db)):
     db_zone = read.get_zones_by_spot(db, zoneGuid=zoneGuid)
     return db_zone
+
+
+# TESTING: running python function
+@app.get("/test")
+def super_test():
+    test = get_data(3)
+    return test
