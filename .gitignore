@@ -2,6 +2,7 @@
 
 .vscode/settings.json
 sql_app/__pycache__/
+/__pycache__
 /venv
 # *.sql
 # *.csv
