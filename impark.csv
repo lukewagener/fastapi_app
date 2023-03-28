@@ -1,4 +1,4 @@
-address,postalCode,latitude,longitude,lowestMonthlyRate,coveredParking,busNearby,distanceFromCenter,usage,range0.5,range1.0,range1.5,range2.0,hourlyRate
+address,postalCode,latitude,longitude,lowestMonthlyRate,coveredParking,busNearby,distanceFromCenter,usage,rangePointFive,rangeOnePointZero,rangeOnePointFive,rangeTwoPointZero,hourlyRate
 165 Aberdeen Avenue,R2W 1T9,49.9163635,-97.1314242,182.8192105,0,1,2.419853152,0,0,50,50,41.66666667,0.25
 939 Main Street,R2W3P2,49.9110579,-97.1325636,45,0,1,1.826334675,1,50,50,41.17647059,50,1
 35 Tecumseh Street,R3E2B3,49.907072,-97.161396,182.8192105,0,1,2.116508453,1,66.66666667,71.42857143,48.93617021,52.17391304,4
