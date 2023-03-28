@@ -38,3 +38,24 @@ class ZonesBase(BaseModel):
 class Zones(ZonesBase):
     class Config:
         orm_mode = True
+
+class ImparkBase(BaseModel):
+    id: int
+    address: str
+    postalCode: str
+    latitude: float
+    longitude: float
+    lowestMonthlyRate: float
+    coveredParking: bool
+    busNearby: bool
+    distanceFromCenter: float
+    usage: bool
+    rangePointFive: float
+    rangeOnePointZero: float
+    rangeOnePointFive: float
+    rangeTwoPointZero: float
+    hourlyRate: float
+
+class Impark(ImparkBase):
+    class Config:
+        orm_mode = True

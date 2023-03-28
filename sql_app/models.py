@@ -38,3 +38,22 @@ class Zones(Base):
     eveningsWeekends = Column(Integer)
 
     spots = relationship("Spots", backref="zones")
+
+
+class Impark(Base):
+    __tablename__="impark"
+
+    id = Column(Integer, primary_key=True, index=True)
+    address = Column(String)
+    postalCode = Column(String)
+    latitude = Column(Numeric)
+    longitude = Column(Numeric)
+    lowestMonthlyRate = Column(Numeric)
+    coveredParking = Column(Boolean)
+    busNearby = Column(Boolean)
+    distanceFromCenter = Column(Numeric)
+    usage = Column(Boolean)
+    rangePointFive = Column(Numeric)
+    rangeOnePointZero = Column(Numeric)
+    rangeOnePointFive = Column(Numeric)
+    rangeTwoPointZero = Column(Numeric)
