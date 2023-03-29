@@ -57,3 +57,4 @@ class Impark(Base):
     rangeOnePointZero = Column(Numeric)
     rangeOnePointFive = Column(Numeric)
     rangeTwoPointZero = Column(Numeric)
+    hourlyRate = Column(Numeric)
