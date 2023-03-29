@@ -5,6 +5,7 @@ import json
 
 # data = data.drop(['Unnamed: 0','index','Zone_Name','Postal_Code','Address','Latitude','Longitude','Reservation_Count','Postalcode','Scaling','Bus_Nearby','Hourly_Rate'],axis = 1)
 
+filename = "gryd_model.pkl"
 
 def dynamic_pricing(features):
   
