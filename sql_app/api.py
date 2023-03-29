@@ -31,18 +31,20 @@ def get_db():
     finally:
         db.close()
 
-@app.get("/zones/", response_model=list[schemas.Zones])
-def read_zones(skip: int = 0, db: Session = Depends(get_db)):
-    zones = read.get_zones(db, skip=skip)
-    return zones
 
-# FrontEnd Default View (Pins on the Map)
+# Default View (Initial page load, green pins on the map)
 @app.get("/spots", response_model=list[schemas.Spots])
 async def read_spots(skip: int = 0, db: Session = Depends(get_db)):  
     spots = read.get_spots(db, skip=skip)
     return spots
 
-# FrontEnd Selected Pin on the Map
+# IMPARK data Default View (red pins)
+@app.get("/impark", response_model=list[schemas.Impark])
+def read_impark(db: Session = Depends(get_db)):  
+    impark_data = read.get_impark_spots(db)
+    return impark_data
+
+# Selected/Clicked Pin on the Map
 @app.get("/zones/{zoneGuid}", response_model=list[schemas.Zones])
 def read_zone(zoneGuid: str, db: Session = Depends(get_db)):
     db_zone = read.get_zones_by_spot(db, zoneGuid=zoneGuid)
@@ -54,3 +56,9 @@ def read_zone(zoneGuid: str, db: Session = Depends(get_db)):
 def super_test():
     test = get_data(3)
     return test
+
+# TESTING: Zone table API
+@app.get("/zones/", response_model=list[schemas.Zones])
+def read_zones(skip: int = 0, db: Session = Depends(get_db)):
+    zones = read.get_zones(db, skip=skip)
+    return zones
