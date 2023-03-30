@@ -59,3 +59,14 @@ class ImparkBase(BaseModel):
 class Impark(ImparkBase):
     class Config:
         orm_mode = True
+
+
+class DynamicBase(BaseModel):
+    rateHourly: float
+    rateDaily: float
+    rateEvening: float
+    rateFull: float
+
+class Dynamic(DynamicBase):
+    class Config:
+        orm_mode = True
