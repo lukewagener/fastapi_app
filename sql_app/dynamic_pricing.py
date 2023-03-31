@@ -13,7 +13,7 @@ def dynamic_pricing(features):
   
 
   #Loading the trained model
-  loaded_model = jb.load("C:\Users\Xam\Documents\ACE_Space\GRYD\GrydBackend\sql_app\gryd_model.pkl")
+  loaded_model = jb.load(r"C:\Users\Xam\Documents\ACE_Space\GRYD\GrydBackend\sql_app\gryd_model.pkl")
 
   #making predictions from trained model
   hourly = loaded_model.predict([data])
