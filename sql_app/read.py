@@ -10,9 +10,13 @@ def get_spots(db: Session, skip: int = 0):
 def get_impark_spots(db: Session, skip: int = 0):
     return db.query(models.Impark).offset(skip).all()
 
-# Selected/Clicked Pin on the Map
+# Selected/Clicked Gryd Marker
 def get_zones_by_spot(db: Session, zoneGuid: str):
     return db.query(models.Zones).filter(models.Zones.zoneGuid == zoneGuid).all()
+
+# Selected/Clicked Impark Marker
+def get_impark_details(db: Session, id: int):
+    return db.query(models.Impark).filter(models.Impark.id == id).all()
 
 # Dynamic Pricing
 def get_prices_by_spot(db: Session, zoneGuid: str):

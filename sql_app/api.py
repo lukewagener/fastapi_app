@@ -45,11 +45,17 @@ def read_impark(db: Session = Depends(get_db)):
     impark_data = read.get_impark_spots(db)
     return impark_data
 
-# Selected/Clicked Pin on the Map
+# Selected/Clicked Gryd Marker
 @app.get("/zones/{zoneGuid}", response_model=list[schemas.Zones])
 def read_zone(zoneGuid: str, db: Session = Depends(get_db)):
     db_zone = read.get_zones_by_spot(db, zoneGuid=zoneGuid)
     return db_zone
+
+# Selected/Clicked Impark Marker
+@app.get("/impark/{id}", response_model=list[schemas.Impark])
+def read_impark_details(id: int, db: Session = Depends(get_db)):
+    impark_detail = read.get_impark_details(db, id=id)
+    return impark_detail
 
 
 # TESTING: running python function
