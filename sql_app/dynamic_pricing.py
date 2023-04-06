@@ -18,7 +18,7 @@ import json
 from pandas.api.types import is_string_dtype
 
 #installing haversine
-!pip install haversine
+# !pip install haversine
 
 #importing haversine function from haversine library
 from haversine import haversine
@@ -159,10 +159,3 @@ def dynamic_pricing(features):
 
   #returning predicted 
   return(hourly,daily,weekly,monthly)
-
-#calling the function to predict price
-predicted_price = dynamic_pricing(jd)
-
-#printing the predicted price
-print(predicted_price)
-

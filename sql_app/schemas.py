@@ -60,6 +60,23 @@ class Impark(ImparkBase):
     class Config:
         orm_mode = True
 
+class FeaturesBase(BaseModel):
+    latitude: float
+    longitude: float
+    coveredParking: bool
+    electricCharger: bool
+    rating: int
+    reservedHours: int
+    spotCount: int
+    rateDaily: float
+    rateEvening: float
+    rateFull: float
+    commuter: int
+    eveningsWeekends: int
+
+class Features(FeaturesBase):
+    class Config:
+        orm_mode = True
 
 class DynamicBase(BaseModel):
     rateHourly: float
@@ -70,3 +87,4 @@ class DynamicBase(BaseModel):
 class Dynamic(DynamicBase):
     class Config:
         orm_mode = True
+

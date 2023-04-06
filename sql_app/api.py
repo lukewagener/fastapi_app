@@ -3,9 +3,7 @@ from sqlalchemy.orm import Session
 from . import read, models, schemas
 from .database import SessionLocal, engine
 from fastapi.middleware.cors import CORSMiddleware
-
-from stub import get_data
-from . import dynamic_pricing as dp
+from .dynamic_pricing import dynamic_pricing as dp
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -57,12 +55,12 @@ def read_impark_details(id: int, db: Session = Depends(get_db)):
     impark_detail = read.get_impark_details(db, id=id)
     return impark_detail
 
-
-# TESTING: running python function
-@app.get("/test")
-def super_test():
-    test = get_data(3)
-    return test
+#Dynamic pricing 
+@app.get("/prices/{zoneGuid}", response_model=list[schemas.Dynamic])
+def read_prices(zoneGuid: str, db: Session = Depends(get_db)):
+    db_prices = read.get_prices_by_spot(db, zoneGuid=zoneGuid)
+    prices = dp(db_prices)
+    return prices
 
 # TESTING: Zone table API
 @app.get("/zones/", response_model=list[schemas.Zones])
