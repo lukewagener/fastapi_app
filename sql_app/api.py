@@ -3,8 +3,7 @@ from sqlalchemy.orm import Session
 from . import read, models, schemas
 from .database import SessionLocal, engine
 from fastapi.middleware.cors import CORSMiddleware
-
-from stub import get_data
+from .dynamic_pricing import dynamic_pricing as dp
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -31,14 +30,9 @@ def get_db():
     finally:
         db.close()
 
-@app.get("/zones/", response_model=list[schemas.Zones])
-def read_zones(skip: int = 0, db: Session = Depends(get_db)):
-    zones = read.get_zones(db, skip=skip)
-    return zones
-
 # FrontEnd Default View (Pins on the Map)
-@app.get("/spots", response_model=list[schemas.Spots])
-async def read_spots(skip: int = 0, db: Session = Depends(get_db)):  
+@app.get("/spots/", response_model=list[schemas.Spots])
+def read_spots(skip: int = 0, db: Session = Depends(get_db)):
     spots = read.get_spots(db, skip=skip)
     return spots
 
@@ -48,9 +42,9 @@ def read_zone(zoneGuid: str, db: Session = Depends(get_db)):
     db_zone = read.get_zones_by_spot(db, zoneGuid=zoneGuid)
     return db_zone
 
-
-# TESTING: running python function
-@app.get("/test")
-def super_test():
-    test = get_data(3)
-    return test
+#Dynamic pricing 
+@app.get("/prices/{zoneGuid}", response_model=list[schemas.Dynamic])
+def read_prices(zoneGuid: str, db: Session = Depends(get_db)):
+    db_prices = read.get_prices_by_spot(db, zoneGuid=zoneGuid)
+    prices = dp(db_prices)
+    return prices
