@@ -18,7 +18,7 @@ import json
 from pandas.api.types import is_string_dtype
 
 #installing haversine
-# !pip install haversine
+#pip install haversine
 
 #importing haversine function from haversine library
 from haversine import haversine
@@ -27,14 +27,14 @@ from haversine import haversine
 filename = "gryd_model.pkl"
 
 #loading csv file into pandas dataframe
-data = pd.read_csv('Processed_Parking_Data.csv',index_col=0)
+# data = pd.read_csv("Processed_Parking_Data.csv",index_col=0)
 
 # Coordinates of centre of winnipeg
-data['lon_win'] = -97.138451
-data['lat_win'] = 49.895077
+# data['lon_win'] = -97.138451
+# data['lat_win'] = 49.895077
 
 #Printing dataframe
-data.head()
+# data.head()
 
 #Defining Haversine function to calculate distance between two quardinate points
 from math import radians, cos, sin, asin, sqrt
@@ -58,20 +58,20 @@ def custom_haversine(k):
 
 #pinting column names
 #Some of the columns in the list below are not expected by the model
-data.columns
+# data.columns
 
 # Creating example string to test function
 
 #Extract 4th row from dataframe
-d = data.iloc[5]
+# d = data.iloc[5]
 
 #Converting pandas dataframe into JSON string
-js = d.to_json(orient ='index')
-print(js)
+# js = d.to_json(orient ='index')
+# print(js)
 
 #converting dataframe to JSON dict
-jd = json.loads(js)
-print(jd)
+# jd = json.loads(js)
+# print(jd)
 
 #Dynamic price prediction function  
 def dynamic_pricing(features):
