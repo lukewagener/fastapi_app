@@ -22,4 +22,4 @@ def get_impark_details(db: Session, id: int):
 
 #Get Features from both tables for DYNAMIC PRICING
 def get_prices_by_spot(db: Session, zoneGuid: str):
-    return db.query(models.Spots.latitude, models.Spots.longitude, models.Spots.coveredParking, models.Spots.electricCharger, models.Spots.rating, models.Spots.reservedHours, models.Spots.spotCount, models.Zones.rateDaily, models.Zones.rateEvening, models.Zones.rateFull).join(models.Spots, models.Spots.zoneGuid == models.Zones.zoneGuid).filter(models.Zones.zoneGuid == zoneGuid).all()
+    return db.query(models.Spots.latitude, models.Spots.longitude, models.Spots.coveredParking, models.Spots.electricCharger, models.Spots.rating, models.Spots.reservedHours, models.Spots.spotCount, models.Zones.rateDaily, models.Zones.rateEvening, models.Zones.rateFull, models.Zones.commuter, models.Zones.eveningsWeekends).join(models.Spots, models.Spots.zoneGuid == models.Zones.zoneGuid).filter(models.Zones.zoneGuid == zoneGuid).all()
