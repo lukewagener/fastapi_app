@@ -67,10 +67,3 @@ def read_prices(zoneGuid: str, db: Session = Depends(get_db)):
 def read_zones(skip: int = 0, db: Session = Depends(get_db)):
     zones = read.get_zones(db, skip=skip)
     return zones
-
-# TESTING: DSML Team's function
-#Dynamic pricing 
-@app.get("/prices/{zoneGuid}", response_model=list[schemas.Dynamic])
-def read_prices(zoneGuid: str, db: Session = Depends(get_db)):
-    db_prices = read.get_prices_by_spot(db, zoneGuid=zoneGuid)
-    return dp(db_prices)
