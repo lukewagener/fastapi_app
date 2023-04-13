@@ -78,13 +78,15 @@ class Features(FeaturesBase):
     class Config:
         orm_mode = True
 
-class DynamicBase(BaseModel):
-    rateHourly: float
-    rateDaily: float
-    rateEvening: float
-    rateFull: float
+# class DynamicBase(BaseModel):
+#     rateHourly: float
+#     rateDaily: float
+#     rateEvening: float
+#     rateFull: float
+#     Std_deviation: float
 
-class Dynamic(DynamicBase):
-    class Config:
-        orm_mode = True
+
+# class Dynamic(DynamicBase):
+#     class Config:
+#         orm_mode = True
 

@@ -1,0 +1,189 @@
+index,Zone_Name,Postal_Code,Address,Postalcode,Latitude,Longitude,Covered_Parking,Electric_charger,Rating,Reservation_Count,Reserved_hours,Spot_Count,Hourly_Rate,Daily_Rate,Evening_Rate,24-Jul,Commuter,Eveninng_and_Weekends,Distance_from_center,Scaling,Bus_Nearby
+0,210 Rue Masson - Uncovered,5,"210 Rue Masson, Winnipeg, MB, Canada, Winnipeg",R2H0H4,49.891195,-97.120443,0,1,2.82,16,4523,24,1,5,2,65,50,25,1.360281601,5,0
+1,38 Carlton Street - Uncovered,68,38 Carlton Street,R3C1N9,49.8853,-97.14234,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.122282909,5,1
+2,474 Henderson Hwy - Uncovered,18,474 Henderson Hwy,R2K2H8,49.92045,-97.11133,0,0,1.603575758,0,0,0,1,5,2,0,0,0,3.425212625,5,0
+3,41(B) Balmoral Street - Uncovered,75,"41 Balmoral Street, Winnipeg, MB, Canada, Winnipeg",R3C1X3,49.882739,-97.152681,1,1,1,0,0,9,1,5,2,115,95,25,1.709215463,5,0
+4,94 Roslyn Road - Standard Uncovered,102,"94 Roslyn Road, Winnipeg, MB, Canada, Winnipeg",R3L0G6,49.880122,-97.145895,0,0,2.8,3,256,4,1,5,2,99,75,25,1.746342749,5,0
+5,Standard Uncovered,107,"130 Scott Street, Winnipeg, MB, Canada, Winnipeg",R3L0K8,49.879354,-97.140755,0,1,0,1,713,4,1,20,10,199,129,99,1.756092618,20,0
+6,2211 McPhillips - Uncovered,30,"2211 McPhillips Street, Winnipeg, MB, Canada, Winnipeg",R2V3M5,49.950793,-97.148556,0,0,0,2,13,2,1,5,2,40,30,20,6.237428583,5,0
+7,458 Balmoral St. - Covered,56,"458 Balmoral Street, Winnipeg, MB, Canada, Winnipeg",R3B3K5,49.893902,-97.152794,1,0,3.5,43,565,4,1,5,2,140,110,80,1.035684237,5,0
+8,1295 Pembina Hwy - Uncovered,131,"1296 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T2B4,49.841284,-97.152857,0,0,5,0,0,2,1,5,2,25,20,15,6.069964716,5,0
+9,149 Portage Avenue East - Motorcycle Parking,29,"149 Portage Avenue East, Winnipeg, MB, Canada, Winnipeg",R2P1X8,49.895144,-97.136186,0,0,3.5,1,2,4,2,10,8,0,0,0,0.162414128,5,1
+10,Green Zone - PARK AND PAY ,12,"400 Tache Avenue, Winnipeg, MB, Canada, Winnipeg",R2H2A6,49.884712,-97.123313,0,1,2.89,5231,16803,175,4,17.5,3,1,1,50,1.582527085,4.375,0
+11,169 Provencher Blvd. - Uncovered,4,"169 Provencher Blvd, Winnipeg, MB, Canada, Winnipeg",R2H0G2,49.892147,-97.122927,0,0,2,0,0,4,1,5,2,70,50,30,1.158771084,5,0
+12,826 Silverstone Avenue - Uncovered,139,"826 Silverstone Avenue, Winnipeg, MB, Canada, Winnipeg",R3T2W6,49.796665,-97.14576,0,0,0,0,0,12,1,1,1,1,45,1,10.95545766,1,0
+13,Green Zone - PARK AND PAY ,12,"400 Tache Avenue, Winnipeg, MB, Canada, Winnipeg",R2H2A6,49.884712,-97.123313,0,1,2.89,5231,16803,175,1,17.5,3,1,1,50,1.582527085,17.5,0
+14, 339 Cumberland Avenue - Uncovered,43,"339 Cumberland Ave, Winnipeg, MB, Canada, Winnipeg",R3B,49.89631,-97.146341,0,1,5,9,40,46,2,1,5,0,0,0,0.581550534,0.5,0
+15,154 Evanson St. - Uncovered,91,154 Evanson St.,R3G1B4,49.882083,-97.170793,0,0,1.603575758,0,0,0,1,5,2,50,35,25,2.730581467,5,0
+16,1050 Henderson Hwy. - Uncovered,19,1050 Henderson Hwy.,R2K2M5,49.936985,-97.095924,0,0,1.603575758,0,0,0,1,5,2,1,25,1,5.566568059,5,0
+17,561 Wellington Crescent - Uncovered,121,"561 Wellington Crescent, Winnipeg, MB, Canada, Winnipeg",R3M0A6,49.877142,-97.161896,0,0,0,0,0,6,1,5,2,90,70,25,2.607396996,5,0
+18,50 Carlton Street - Uncovered,68,"50 Carlton Street, Winnipeg, MB, Canada, Winnipeg",R3C1N9,49.885546,-97.142404,0,1,0,0,0,13,1,5,2,175,140,60,1.096980668,5,1
+19,176 Smith St. - Monthly Available,57,"176 Smith Street, Winnipeg, MB, Canada, Winnipeg",R3C,49.890054,-97.140332,0,0,0,0,0,2,6,18,18,1,225,1,0.574555577,3,1
+20,603 Wellington Crescent - Uncovered,122,"603 Wellington Crescent, Winnipeg, MB, Canada, Winnipeg",R3M0A7,49.877602,-97.164073,0,0,4.75,0,0,13,1,5,2,55,45,25,2.673083353,5,0
+21,572/578 Corydon Avenue - Uncovered,113,"572/578 Corydon Avenue, Winnipeg, MB, Canada, Winnipeg",R3L0P2,49.872736,-97.146664,0,1,0,0,0,16,1,5,2,75,50,35,2.552946967,5,0
+22,207 Carlton St. - Event Parking,69,"207 Carlton Street, Winnipeg, MB, Canada, Winnipeg",R3C1P5,49.890452,-97.144332,0,0,0,24,80,26,7,18,17,0,0,0,0.664798404,2.571428571,1
+23,318 Assiniboine Ave. - Uncovered,62,"318 Assiniboine Avenue, Winnipeg, MB, Canada, Winnipeg",R3C0X6,49.884931,-97.137914,0,1,0,0,0,12,2,10,5,150,110,75,1.128839419,5,1
+24,145/149 Arlington St. - Uncovered,94,145/149 Arlington St.,R3G1Y6,49.882423,-97.169403,0,0,1.603575758,0,0,0,1,5,2,50,35,35,2.626154015,5,0
+25,20 Lyndale Drive - Uncovered | 24/7,16,"20 Lyndale Drive, Winnipeg, MB, Canada, Winnipeg",R2H3H2,49.880883,-97.130631,0,0,2.5,1,242,4,1,5,2,80,60,35,1.674782084,5,0
+26,324 Logan Ave - Surface Parking 24/7,38,"324 Logan Avenue, Winnipeg, MB, Canada, Winnipeg",R3A0L5,49.903724,-97.140481,0,0,5,2,188,15,1.5,6,3,120,90,50,0.972433763,4,0
+27,225 Princess St. - Uncovered,49,"225 Princess Street, Winnipeg, MB, Canada, Winnipeg",R3B1L5,49.901664,-97.139308,0,0,0,34,123,14,3,12,5,180,110,90,0.735008634,4,0
+28,80 Lombard Ave. - Rear Parking,47,80 Lombard Ave.,R3B0Y3,49.89587,-97.133676,0,0,1.603575758,0,0,0,3,16,6,210,170,1,0.353216684,5.333333333,0
+29,482 Balmoral St. - Assigned Stalls,52,"482 Balmoral Street, Winnipeg, MB, Canada, Winnipeg",R3B2P8,49.894701,-97.152447,0,0,1,3,14,4,1,5,4,120,100,70,1.00341702,5,0
+30,590 University Crescent - Game Day,144,590 University Crescent,R3T6G9,49.803489,-97.135049,0,0,4.5,35,781,27,1,5,9,1,65,1,10.18704155,5,0
+31,30 University Crescent- Scramble Parking,144,30 University Crescen,R3T6G9,49.818986,-97.150901,0,0,1.603575758,0,0,0,9,2,9,0,0,0,8.507875897,0.222222222,0
+32,590 University Crescent - Uncovered,138,"Converge Community Church, University Crescent, Winnipeg, MB, Canada, Winnipeg",R3T2N8,49.802747,-97.135216,0,0,4.5,0,0,1,1,5,9,1,1,1,10.26924734,5,0
+33,297 Furby Street - Uncovered,80,"297 Furby Street, Winnipeg, MB, Canada, Winnipeg",R3C2A8,49.887295,-97.157364,0,1,0,0,0,4,1,1,1,70,50,35,1.607612661,1,0
+34,590 University Crescent - Uncovered,138,"Converge Community Church, University Crescent, Winnipeg, MB, Canada, Winnipeg",R3T2N8,49.802747,-97.135216,0,0,4.5,0,0,1,6.5,5,9,1,1,1,10.26924734,0.769230769,0
+35,800 Corydon - Uncovered,124,800 Corydon,R3M0W6,49.870449,-97.155593,0,0,1.603575758,0,0,0,1,5,2,0,0,0,3.001319151,5,0
+36,277 River Avenue - Uncovered,101,277 River Avenue,R3L0B5,49.882456,-97.13939,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.405002497,5,1
+37,275 Stradbrook Avenue | Uncovered - Pre-booking,103,"275 Stradbrook Avenue, Winnipeg, MB, Canada, Winnipeg",R3L0J5,49.880209,-97.138301,0,0,3.38,0,0,1,1,5,2,80,60,50,1.653281095,5,0
+38,491 Stradbrook Avenue - Uncovered,106,"491 Stradbrook Avenue, Winnipeg, MB, Canada, Winnipeg",R3L0K2,49.877542,-97.145973,0,1,5,0,0,19,1,5,2,99,75,25,2.022905955,5,0
+39,201 Thomas Berry St. - Uncovered,2,"201 Thomas Berry Street, Winnipeg, MB, Canada, Winnipeg",R2H 0P9,49.883528,-97.119489,0,1,2.25,0,0,2,3,12,7,150,100,50,1.869345888,4,0
+40,50 Hargrave - Uncovered,65,50 Hargrave,R3C1N1,49.886436,-97.140811,0,0,1.603575758,0,0,0,1,5,2,0,0,0,0.975595714,5,1
+41,691 Sherbrook Street - Uncovered,55,691 Sherbrook Street,R3B2X2,49.899914,-97.157907,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.493764828,5,0
+42,133 Matheson Ave East - Uncovered,32,133 Matheson Ave East,R2W5M7,49.92918,-97.117972,0,0,1.603575758,0,0,0,1,5,2,0,0,0,4.065736914,5,0
+43,282 Furby Street - Uncovered,81,"282 Furby Street, Winnipeg, MB, Canada, Winnipeg",R3C2A9,49.88721,-97.158092,0,0,3.25,1,242,2,1,5,2,80,60,45,1.656775022,5,0
+44,438 Aulneau Street - Uncovered,13,438 Aulneau Street,R2H2V2,49.886819,-97.117965,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.73115024,5,0
+45,303 Stradbrook Avenue - Uncovered,103,303 Stradbrook Avenue,R3L0J5,49.880407,-97.139406,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.632663741,5,0
+46,275 Nassau Street - Uncovered,118,275 Nassau Street,R3L2J4,49.872805,-97.145026,0,0,1.603575758,0,0,0,1,5,2,50,35,35,2.520939084,5,0
+47,30 University Crescent- Scramble Parking,144,30 University Crescent,R3T6G9,49.818958,-97.150558,0,0,1.603575758,0,0,0,1,2,9,0,0,0,8.508428858,2,0
+48,1695 Pembina Hwy. - Uncovered,132,"1695 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T2G6,49.826811,-97.154911,0,0,0,0,0,6,1,5,2,0,0,0,7.681981745,5,0
+49,291 Stradbrook Avenue - Uncovered,103,291 Stradbrook Avenue,R3L0J5,49.880725,-97.138773,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.596036307,5,0
+50,555 Broadway - Uncovered,60,"555 Broadway, Winnipeg, MB, Canada, Winnipeg",R3C0W4,49.88573,-97.152443,0,1,2.5,19,910,5,1,5,2,125,100,75,1.443930582,5,1
+51,118 Sherbrook St. - Uncovered,82,118 Sherbrook St.,R3C2B4,49.882964,-97.159853,0,0,1.603575758,0,0,0,3,1,1,1,1,1,2.040819854,0.333333333,0
+52,366 Young St. - Assigned Stalls,53,"366 Young Street, Winnipeg, MB, Canada, Winnipeg",R3B2S4,49.891382,-97.155393,0,0,2.78,95,1294,10,1.5,7.5,6,138,110,80,1.28127438,5,0
+53,280 Garry Street - Pre-book,64,"280 Garry St, Winnipeg, MB, Canada, Winnipeg",R3C1H3,49.893412,-97.140858,0,0,4.5,21,330,3,4,12,12,200,170,120,0.252991208,3,1
+54,785 Keewatin Street - Uncovered,33,"785 Keewatin Street, Winnipeg, MB, Canada, Winnipeg",R2X3B9,49.936508,-97.193277,0,0,0,0,0,2,1,5,2,25,20,15,6.052560212,5,0
+55,767 Beverley Street - Uncovered,86,"767 Beverley Street, Winnipeg, MB, Canada, Winnipeg",R3E2A7,49.901861,-97.164427,0,0,0,0,0,2,1,5,2,80,65,40,2.007652215,5,0
+56,548 Main St. - Uncovered,48,"548 Main St, Winnipeg, MB, Canada, Winnipeg",R3B1C4,49.900549,-97.137952,0,0,0,1,2,14,3,12,12,0,0,0,0.609507489,4,0
+57,401 Stradbrook Ave - Uncovered,105,401 Stradbrook Ave,R3L0J7,49.879328,-97.143012,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.781433406,5,0
+58,37 Edmonton Street - Uncovered,71,"37 Edmonton St, Winnipeg, MB, Canada, Winnipeg",R3C1P8,49.884784,-97.142685,0,0,0,0,0,5,1,1,5,0,0,0,1.184038956,1,1
+59,203 Thomas Berry St. - Uncovered,7,"203 Thomas Berry Street, Winnipeg, MB, Canada, Winnipeg",R2H0P9,49.883571,-97.119354,0,0,0,0,0,3,3,12,7,150,100,50,1.873116051,4,0
+60,56 Kate Street - Uncovered,42,"56 Kate Street, Winnipeg, MB, Canada, Winnipeg",R3A1J8,49.900737,-97.153992,0,0,0,0,0,1,1,5,2,80,65,40,1.278746039,5,0
+61,2295 Pembina Hwy - Uncovered,133,"Markham Place, 2295 Pembina Hwy, Winnipeg, MB, Canada, Winnipeg",R3T2H4,49.807998,-97.156284,0,0,5,1,20,36,2,5,5,75,60,25,9.766789459,2.5,0
+62,1919 Bishop Grandin - Uncovered,25,1919 Bishop Grandin,R2M3G1,49.840272,-97.094258,0,0,1.603575758,0,0,0,1,5,2,25,20,15,6.868006482,5,0
+63,172 Edmonton St. - Uncovered Evenings/Weekends,72,"172 Edmonton Street, Winnipeg, MB, Canada, Winnipeg",R3C1R3,49.888872,-97.145848,0,0,0.5,3,8,1,3,14,12,230,200,170,0.869959599,4.666666667,1
+64,532 Ellice Avenue - Uncovered,51,"532 Ellice Ave, Winnipeg, MB R3B 1Z2, Canada, Winnipeg",R3B1Z2,49.892479,-97.155812,0,0,0,1,6,4,1.5,7.5,6,138,110,80,1.276724432,5,0
+65, 105 Galt Ave. - Uncovered,44,"105 Galt Avenue, Winnipeg, MB, Canada, Winnipeg",R3B 0L1,49.90078,-97.131724,0,0,5,1,3,4,1,1,2,0,0,0,0.796429581,1,0
+66,430 Stradbrook Avenue - Uncovered,119,430 Stradbrook Avenue,R3L2P8,49.878485,-97.143619,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.881731119,5,0
+67,275 Stradbrook Avenue | Uncovered - Guest Checkout,103,"275 Stradbrook Avenue, Winnipeg, MB, Canada, Winnipeg",R3L0J5,49.880209,-97.138301,0,0,3.38,1,713,8,1,5,2,80,60,50,1.653281095,5,0
+68,1681 Pembina Hwy - Uncovered,132,"1681 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T2G6,49.8282,-97.152688,0,1,0,5,27,7,1,5,2,0,0,0,7.506079947,5,0
+69,164 Dollard Blvd. - Uncovered,6,"164 Dollard Boulevard, Winnipeg, MB, Canada, Winnipeg",R2H0M2,49.884876,-97.121686,0,0,1,0,0,1,1,5,2,125,99,25,1.651989462,5,0
+70,366 Young St. - Scramble Parking ,53,"366 Young Street, Winnipeg, MB, Canada, Winnipeg",R3B2S4,49.891382,-97.155393,0,0,2.78,152,1413,10,1.5,7.5,6,138,110,80,1.28127438,5,0
+71,85 Hargrave - Uncovered,66,"85 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3C1N3,49.886788,-97.140847,0,1,0,0,0,9,1,5,2,175,150,35,0.937540428,5,1
+72,39 Westbrook St. - Uncovered,58,"39 Westbrook St, Winnipeg, MB, Canada, Winnipeg",R3C0A1,49.894367,-97.135347,0,0,0,1,5,23,2,6,6,0,0,0,0.23594332,3,1
+73,Blue Zone - PRE-BOOK,12,"400 Tache Avenue, Winnipeg, MB, Canada, Winnipeg",R2H2A6,49.884712,-97.123313,0,1,2.89,1115,4471,20,1,17.5,3,1,1,50,1.582527085,17.5,0
+74,563 William Ave - Uncovered,37,"563 William Avenue, Winnipeg, MB, Canada, Winnipeg",R3A0K1,49.903217,-97.151942,0,0,0,0,0,1,2,5,3,70,65,50,1.323995628,2.5,0
+75,516 Hargrave - Uncovered,41,"516 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3A0X8,49.8997,-97.144081,0,0,0.5,1,4,4,1,1,4,0,0,0,0.653353664,1,0
+76,516 Hargrave - Uncovered,41,"516 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3A0X8,49.8997,-97.144081,0,0,0.5,0,0,1,1,1,4,0,0,0,0.653353664,1,0
+77,840 Waverley Street - Uncovered,143,"840 Waverley Street, Winnipeg, MB, Canada, Winnipeg",R3T5Z7,49.848843,-97.177708,0,0,0,0,0,2,1,5,2,25,20,15,5.860432474,5,0
+78,246 Lilac Street - Uncovered,128,"246 Lilac Street, Winnipeg, MB, Canada, Winnipeg",R3M2S2,49.869665,-97.1575,0,0,0,2,4,10,1,1,10,0,0,0,3.138043116,1,0
+79,246 Lilac Street - Uncovered,128,"246 Lilac Street, Winnipeg, MB, Canada, Winnipeg",R3M2S2,49.869665,-97.1575,0,0,0,0,0,10,1,1,10,0,0,0,3.138043116,1,0
+80,324 Logan Ave - Surface Parking ,38,324 Logan Ave,R3A0L5,49.904397,-97.140251,0,0,1.603575758,0,0,0,1.5,6,3,0,0,0,1.044325059,4,0
+81,230 Osborne Street - Uncovered,116,"230 Osborne Street, Winnipeg, MB, Canada, Winnipeg",R3L1Y8,49.875727,-97.140557,0,0,0,4,62,2,1,5,2,99,75,25,2.156905784,5,0
+82,1139 Grant Ave. - Uncovered,126,1139 Grant Ave.,R3M1Y8,49.859989,-97.166388,0,0,1.603575758,0,0,0,1,5,2,45,1,1,4.385205725,5,0
+83,114 Juno St. - Uncovered,34,"114 Juno Street, Winnipeg, MB, Canada, Winnipeg",R3A,49.90203,-97.151408,0,0,0,1,3,9,1,5,2,1,1,1,1.207899369,5,0
+84,1910 Pembina Highway - Guest Checkout,130,"1910 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T,49.822361,-97.150249,0,0,4.17,0,0,1,1,5,2,30,25,20,8.12976054,5,0
+85,Blue Zone - PRE-BOOK,12,"400 Tache Avenue, Winnipeg, MB, Canada, Winnipeg",R2H2A6,49.884712,-97.123313,0,1,2.89,1115,4471,20,2,17.5,3,1,1,50,1.582527085,8.75,0
+86,363 William Ave - Hourly/Daily,35,"363 William Avenue, Winnipeg, MB, Canada, Winnipeg",R3A0H8,49.900749,-97.144279,0,0,0,0,0,70,4,14,4,0,0,0,0.75632957,3.5,0
+87,456 Langevin Street - Uncovered,14,456 Langevin Street,R2H2V8,49.887272,-97.116831,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.775365987,5,0
+88,311 Stradbrook Avenue - Uncovered,103,311 Stradbrook Avenue,R3L0J5,49.880396,-97.139608,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.634555749,5,0
+89,2300 Portage Avenue - Uncovered,96,2300 Portage Avenue,R3J0M4,49.876156,-97.246736,0,0,1.603575758,0,0,0,1,5,2,20,15,10,8.03826024,5,0
+90,244 Hindley Ave. - Uncovered Driveway,24,244 Hindley Ave.,R2M1R2,49.846091,-97.09166,0,0,1.603575758,0,0,0,1,5,2,60,45,30,6.396469499,5,0
+91,458 Balmoral St. - Uncovered,56,"458 Balmoral Street, Winnipeg, MB, Canada, Winnipeg",R3B3K5,49.893902,-97.152794,0,0,3.5,71,394,15,1,5,2,140,110,80,1.035684237,5,0
+92,1910 Pembina Highway - Uncovered,130,"1910 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T,49.822361,-97.150249,0,0,4.17,1,713,3,1,5,2,30,25,20,8.12976054,5,0
+93,590 University Crescent - Game Day,138,"Converge Community Church, University Crescent, Winnipeg, MB, Canada, Winnipeg",R3T2N8,49.802747,-97.135216,0,0,4.5,35,781,27,6.5,5,9,1,65,1,10.26924734,0.769230769,0
+94,340 Assiniboine Ave. - Uncovered,63,"340 Assiniboine Avenue, Winnipeg, MB, Canada, Winnipeg",R3C0Y1,49.884784,-97.139114,0,0,0,8,86,10,2,10,6,170,140,100,1.145514463,5,1
+95,183 Maryland Street - Uncovered,92,183 Maryland Street,R3G1L4,49.885183,-97.16055,0,0,1.603575758,0,0,0,1,5,2,50,35,35,1.927860895,5,0
+96,570 St. Mary's Road - Uncovered,27,570 St. Mary's Road,R2M3L5,49.865676,-97.111307,0,0,1.603575758,0,0,0,1,5,2,0,0,0,3.804038263,5,0
+97,33 Killarney Avenue - Uncovered,140,33 Killarney Avenue,R3T3B1,49.790554,-97.15549,0,0,1.603575758,0,0,0,1,5,2,0,0,0,11.68647488,5,0
+98,199 Langside Street - Uncovered,78,"199 Langside Street, Winnipeg, MB, Canada, Winnipeg",R3C1Z6,49.884707,-97.156305,0,1,0,6,43,1,1,5,3,1,1,1,1.722073535,5,0
+99,Visitor Parking - More than 2 hours ,100,"1661 Portage Avenue, Winnipeg, MB, Canada, Winnipeg",R3J3T7,49.880489,-97.203401,0,0,0,0,0,35,1,6,0,1,1,50,4.927745464,6,0
+100,875 Notre Dame Avenue - Standard Uncovered,83,"875 Notre Dame Avenue, Winnipeg, MB, Canada, Winnipeg",R3E0M4,49.904048,-97.166786,0,0,0.5,0,0,4,1,5,2,0,0,0,2.261368977,5,0
+101,297 Enfield Crescent - Uncovered,10,297 Enfield Crescent,R2H1C1,49.882235,-97.112388,0,0,1.603575758,0,0,0,3,5,2,50,35,35,2.350607941,1.666666667,0
+102,80 Balmoral Street - Uncovered,76,"80 Balmoral St, Winnipeg, MB, Canada, Winnipeg",R3C1X4,49.884088,-97.153299,0,1,4,0,0,3,1,6,3,115,95,25,1.620040687,6,0
+103,765 Ellice Avenue - Uncovered,88,765 Ellice Avenue,R3G0B7,49.893819,-97.166582,0,0,1.603575758,0,0,0,1,5,2,0,0,0,2.019915733,5,0
+104,40 Hargrave Street - Uncovered,65,"40 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3C1N1,49.885399,-97.140869,0,1,5,0,0,12,1,5,2,120,90,60,1.089996421,5,1
+105,20 Lyndale Drive - Uncovered | Hourly,16,"20 Lyndale Drive, Winnipeg, MB, Canada, Winnipeg",R2H3H2,49.880883,-97.130631,0,0,2.5,1,2,9,1,5,2,0,0,0,1.674782084,5,0
+106,Evenings and Weekends - Guest Checkout,43,"339 Cumberland Ave, Winnipeg, MB, Canada, Winnipeg",R3B,49.89631,-97.146341,0,1,5,3,7,50,2,1,5,0,0,0,0.581550534,0.5,0
+107,250 Thomas Berry Street - Uncovered,8,"250 Thomas Berry Street, Winnipeg, MB, Canada, Winnipeg",R2H0R3,49.883313,-97.116805,0,1,0,0,0,4,1,5,2,99,75,25,2.028744201,5,0
+108,126 Bryce St. - Uncovered,114,"126 Bryce Street, Winnipeg, MB, Canada, Winnipeg",R3L1X4,49.879304,-97.142148,0,0,0,0,0,8,1,7,4,126,90,70,1.773763852,7,0
+109,391 Gertrude - Uncovered,109,391 Gertrude,R3L0M5,49.877735,-97.141563,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.941188595,5,0
+110,80 Lombard Avenue - Motorcycle Parking,47,"80 Lombard Avenue, Winnipeg, MB, Canada, Winnipeg",R3B0Y3,49.89513,-97.1337,0,0,0,0,0,2,2,10,8,1,1,1,0.340367759,5,0
+111, 41(B) Balmoral Street - Uncovered,75,"41 Balmoral Street, Winnipeg, MB, Canada, Winnipeg",R3C1X3,49.882739,-97.152681,1,1,1,0,0,9,1,5,2,115,95,25,1.709215463,5,0
+112,648 Sherbrook - Uncovered,55,"649 Sherbrook Street, Winnipeg, MB, Canada, Winnipeg",R3B2X2,49.898039,-97.15806,0,0,0,0,0,3,1,5,2,80,65,40,1.442660537,5,0
+113,520 William Avenue - Uncovered,36,"520 William Avenue, Winnipeg, MB, Canada, Winnipeg",R3A0J8,49.902257,-97.150555,0,0,3,10,290,2,1,5,2,1,65,1,1.1785652,5,0
+114,Blue Zone - PRE-BOOK,12,"400 Tache Avenue, Winnipeg, MB, Canada, Winnipeg",R2H2A6,49.884712,-97.123313,0,1,2.89,1115,4471,20,4,17.5,3,1,1,50,1.582527085,4.375,0
+115,828 Silverstone Avenue - Uncovered,139,"828 Silverstone Avenue, Winnipeg, MB, Canada, Winnipeg",R3T2W6,49.796298,-97.145925,0,0,0,2,93,12,1,5,2,1,45,1,10.99678997,5,0
+116,94 Roslyn Road - Monthly Parking,102,"94 Roslyn Road, Winnipeg, MB, Canada, Winnipeg",R3L0G6,49.880122,-97.145895,0,0,2.8,8,1402,5,1,5,2,99,75,25,1.746342749,5,0
+117,324 Young Street - Uncovered ,53,"324 Young Street, Winnipeg, MB, Canada, Winnipeg",R3B2S4,49.889998,-97.155289,0,0,0,7,33,5,1,5,5,0,0,0,1.331848818,5,0
+118,499 Osborne Street - Uncovered,117,499 Osborne Street,R3L2A8,49.867392,-97.136341,0,0,1.603575758,0,0,0,3,1,1,1,1,1,3.08214168,0.333333333,0
+119,395 Wardlaw Avenue - Uncovered,108,395 Wardlaw Avenue ,R3L0L8,49.878488,-97.142432,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.866531742,5,0
+120,668 Corydon Ave. - Uncovered,125,"668 Corydon Avenue, Winnipeg, MB, Canada, Winnipeg",R3M0X7,49.871553,-97.150222,0,0,0.5,1,5,2,1,5,10,70,50,35,2.748347989,5,0
+121,363 William Ave - Monthly Reserved,35,"363 William Avenue, Winnipeg, MB, Canada, Winnipeg",R3A0H8,49.900749,-97.144279,0,1,0,0,0,95,4,14,4,260,195,100,0.75632957,3.5,0
+122,66 Carlton Street - Uncovered,68,66 Carlton Street,R3C1N9,49.88632,-97.14281,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.022579064,5,1
+123,284 Notre Dame Street - Uncovered,3,284 Notre Dame Street,R2H0C6,49.895727,-97.118045,0,0,1.603575758,0,0,0,3,1,1,1,1,1,1.463469785,0.333333333,0
+124,825 Corydon - Uncovered,124,825 Corydon,R3M0W6,49.870681,-97.156606,0,0,1.603575758,0,0,0,1,5,2,0,0,0,3.008460904,5,0
+125,475 Berry Street - Uncovered,99,"475 Berry Street, Winnipeg, MB, Canada, Winnipeg",R3J1N8,49.889621,-97.210072,0,1,0,0,0,28,1,5,2,1,1,25,5.166289106,5,0
+126,36 Carlton Street - Uncovered,68,36 Carlton Street,R3C1N9,49.885715,-97.142187,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.074860634,5,1
+127,441 Carlton St. - Uncovered,50,441 Carlton St.,R3B1R1,49.897983,-97.147693,0,0,1.603575758,0,0,0,2,5,5,100,75,50,0.736644614,2.5,0
+128,207 Carlton St. - Event Prebooking,69,"207 Carlton Street, Winnipeg, MB, Canada, Winnipeg",R3C1P5,49.890452,-97.144332,0,0,0,0,0,18,7.5,18,17,0,0,0,0.664798404,2.4,1
+129,1241 Grant Ave - Uncovered,127,1241 Grant Ave ,R3M1Z4,49.858325,-97.171659,0,0,1.603575758,0,0,0,1,5,2,0,0,0,4.72896989,5,0
+130,294 Stradbrook Avenue - Uncovered,104,294 Stradbrook Avenue ,R3L0J6,49.880205,-97.138589,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.653720502,5,0
+131,308 Colony Street - Uncovered,74,"308 Colony Street, Winnipeg, MB, Canada, Winnipeg",R3C1W6,49.889481,-97.15118,0,0,2.25,2,18,1,3,8,10,110,90,50,1.103920627,2.666666667,1
+132,853 Bannatyne Avenue - Standard Uncovered,84,"853 Bannatyne Avenue, Winnipeg, MB, Canada, Winnipeg",R3E0W6,49.905968,-97.164212,0,0,5,56,407,4,1,5,2,0,0,0,2.207000761,5,0
+133,160 Furby St. - Uncovered,79,160 Furby St.,R3C2A5,49.884072,-97.158394,0,0,1.603575758,0,0,0,3,1,1,1,1,1,1.881117225,0.333333333,0
+134,53 Carlton Street - Uncovered,67,53 Carlton Street,R3C1N7,49.886224,-97.141911,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.015134131,5,1
+135,584 McMillan Avenue - Uncovered,111,584 McMillan Avenue,R3L0N6,49.874135,-97.14743,0,0,1.603575758,0,0,0,1,5,2,75,50,35,2.415870877,5,0
+136,680 Sherbrook Street - Uncovered,54,680 Sherbrook Street,R3B2X1,49.89961,-97.158795,0,0,1.603575758,0,0,0,1,5,4,70,55,40,1.541897804,5,0
+137,257 Toronto - Uncovered,93,257 Toronto,R3G1S3,49.888439,-97.164137,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.982553629,5,0
+138,246 Lilac Street - Uncovered,128,"246 Lilac Street, Winnipeg, MB, Canada, Winnipeg",R3M2S2,49.869665,-97.1575,0,0,0,2,4,10,1,1,10,0,0,0,3.138043116,1,0
+139,246 Lilac Street - Uncovered,128,"246 Lilac Street, Winnipeg, MB, Canada, Winnipeg",R3M2S2,49.869665,-97.1575,0,0,0,0,0,10,1,1,10,0,0,0,3.138043116,1,0
+140,280 Garry St. - Scramble Parking,64,"280 Garry St, Winnipeg, MB, Canada, Winnipeg",R3C1H3,49.893412,-97.140858,0,0,4.5,1,7,3,4,12,8,0,0,0,0.252991208,3,1
+141,800 Beverley Street - Uncovered,85,800 Beverley Street,R3E2A6,49.903113,-97.165015,0,0,1.603575758,0,0,0,1,5,2,0,0,0,2.102017927,5,0
+142,535 Corydon Avenue - Uncovered,112,535 Corydon Avenue ,R3L0N9,49.874273,-97.145599,0,0,1.603575758,0,0,0,1,5,2,0,0,0,2.369309237,5,0
+143,176 Smith St. - 24/7,57,"176 Smith Street, Winnipeg, MB, Canada, Winnipeg",R3C,49.890054,-97.140332,0,0,0,0,0,2,6,18,18,0,0,0,0.574555577,3,1
+144,439 Berry Street - Uncovered,98,439 Berry Street,R3J1N7,49.890123,-97.209824,0,0,1.603575758,0,0,0,1,5,2,0,0,0,5.142341972,5,0
+145,271 Furby Street - Uncovered,80,271 Furby Street,R3C2A8,49.887352,-97.157482,0,0,1.603575758,0,0,0,1,1,1,70,50,35,1.611354836,1,0
+146,115 Bannatyne Ave. - Uncovered,46,"115 Bannatyne Avenue, Winnipeg, MB, Canada, Winnipeg",R3B0R3,49.897359,-97.134664,0,0,4,19,65,5,1,6,3,1,1,99,0.371441368,6,0
+147,179 Langside Street - Uncovered,78,"179 Langside Street, Winnipeg, MB, Canada, Winnipeg",R3C1Z6,49.88418,-97.156371,0,0,5,1,242,2,1,8,5,80,65,50,1.765289791,8,0
+148,361 Langside Street - Uncovered,43,"361 Langside Street, Winnipeg, MB, Canada, Winnipeg",R3B,49.88976,-97.156284,0,0,3.25,117,458,8,1.5,7.5,6,138,120,80,1.407638344,5,0
+149,30 Carlton Street - Uncovered,68,30 Carlton Street,R3C1N9,49.88536,-97.142153,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.112552072,5,1
+150,462 Hargrave St. - Uncovered,40,"462 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3A0X5,49.8979,-97.145547,0,0,5,74,1453,14,1,5,3,1,75,1,0.597393956,5,0
+151,Standard Uncovered,107,"130 Scott Street, Winnipeg, MB, Canada, Winnipeg",R3L0K8,49.879354,-97.140755,0,1,0,1,713,4,2,20,10,199,129,99,1.756092618,10,0
+152,24 Poulin Drive - Uncovered ,9,"24 Poulin Drive, Winnipeg, MB, Canada, Winnipeg",R2H0S9,49.881218,-97.128794,0,0,2.83,47,1671,5,1,5,2,100,70,35,1.689222758,5,0
+153,207 Carlton St. - Secure Lot,57,"213 Carlton St, Winnipeg, MB, Canada, Winnipeg",R3C,49.890748,-97.144506,0,0,3.7,83,4747,31,3,15,15,1,160,100,0.647952836,5,1
+154,590 University Crescent - Monthly,138,"Converge Community Church, University Crescent, Winnipeg, MB, Canada, Winnipeg",R3T2N8,49.802747,-97.135216,0,0,4.5,16,730,10,6.5,5,9,1,65,1,10.26924734,0.769230769,0
+155,587 Broadway - Uncovered,61,587 Broadway ,R3C0W6,49.886474,-97.153719,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.453065333,5,1
+156,482 Balmoral St. - Scramble Parking,52,"482 Balmoral Street, Winnipeg, MB, Canada, Winnipeg",R3B2P8,49.894701,-97.152447,0,0,1,8,29,10,1,5,4,120,100,70,1.00341702,5,0
+157,1275/1295 Portage Ave - Uncovered,90,"1275 Portage Avenue, Winnipeg, MB, Canada, Winnipeg",R3G0T8,49.883307,-97.186569,0,0,0,1,1,2,1,5,2,25,20,15,3.687227142,5,0
+158,1689 Pembina Hwy. - Uncovered,132,"1689 Pembina Hwy, Winnipeg, MB R3T 2G6, Canada, Winnipeg",R3T2G6,49.827383,-97.154757,0,1,4.5,14,171,7,1,5,2,0,0,0,7.617436483,5,0
+159,2295 Pembina Hwy - Zone 1,133,"Markham Place, 2295 Pembina Hwy, Winnipeg, MB, Canada, Winnipeg",R3T2H4,49.807998,-97.156284,1,0,5,0,0,6,1,5,5,75,60,25,9.766789459,5,0
+160,130 Osborne St. - Uncovered,115,"130 Osborne Street, Winnipeg, MB, Canada, Winnipeg",R3L1Y5,49.878166,-97.145185,0,1,3,12,96,5,1,5,3,1,1,70,1.941319829,5,0
+161,172 Edmonton St. - Uncovered 24/7,72,"172 Edmonton Street, Winnipeg, MB, Canada, Winnipeg",R3C1R3,49.888872,-97.145848,0,0,0.5,14,84,4,3,14,12,230,200,130,0.869959599,4.666666667,1
+162,807 Portage Avenue - Uncovered,89,807 Portage Avenue,R3G0N3,49.887671,-97.165646,0,0,1.603575758,0,0,0,1,1,2,1,1,30,2.115048556,1,0
+163,800 Dovercourt - Uncovered,147,800 Dovercourt,R3Y0R3,49.82218,-97.194725,0,0,1.603575758,0,0,0,1,5,2,25,20,15,9.05409435,5,0
+164,Green Zone - PARK AND PAY ,12,"400 Tache Avenue, Winnipeg, MB, Canada, Winnipeg",R2H2A6,49.884712,-97.123313,0,1,2.89,5231,16803,175,2,17.5,3,1,1,50,1.582527085,8.75,0
+165,1697 Pembina Hwy - Uncovered,132,"1697 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T2G6,49.826999,-97.15446,0,0,0,0,0,5,1,5,2,0,0,0,7.656413441,5,0
+166,297 Goulet St. - Scramble Parking,15,"297 Goulet Street, Winnipeg, MB, Canada, Winnipeg",R2H3C4,49.882883,-97.114163,0,0,0,6,123,13,1.5,7,4,90,75,60,2.205909568,4.666666667,0
+167,460 Portage Avenue - Uncovered,59,"460 Portage Avenue, Winnipeg, MB, Canada, Winnipeg",R3C0E8,49.890463,-97.15135,0,1,5,41,238,2,2,8,10,0,0,0,1.056888329,4,1
+168,207 Carlton St. - Event Prebooking,69,"207 Carlton Street, Winnipeg, MB, Canada, Winnipeg",R3C1P5,49.890452,-97.144332,0,0,0,0,0,18,1.5,18,17,0,0,0,0.664798404,12,1
+169,172 Edmonton St. - Small Car Only,72,172 Edmonton St.,R3C1R3,49.889628,-97.145985,0,0,1.603575758,0,0,0,3,14,12,230,200,170,0.81141065,4.666666667,1
+170,210 Pacific Ave - Evening/Weekend,45,"210 Pacific Avenue, Winnipeg, MB, Canada, Winnipeg",R3B0M4,49.901234,-97.137543,0,0,2,0,0,5,3,1,6,1,1,150,0.687709306,0.333333333,0
+171,1699 Pembina Hwy - Uncovered,132,"1699 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T2G6,49.827303,-97.15344,0,0,0,3,25,9,1,5,2,0,0,0,7.612329935,5,0
+172,210 Pacific Ave - Park Mobile Scramble,45,"210 Pacific Avenue, Winnipeg, MB, Canada, Winnipeg",R3B0M4,49.901234,-97.137543,0,0,2,5,32,3,3,12,6,0,0,0,0.687709306,4,0
+173,296 Stradbrook Avenue - Uncovered,104,296 Stradbrook Avenue ,R3L0J6,49.880313,-97.138797,0,0,1.603575758,0,0,0,1,5,2,99,75,25,1.641869025,5,0
+174,880 Alverstone Street - Standard Uncovered,87,"880 Alverstone Street, Winnipeg, MB, Canada, Winnipeg",R3E2H2,49.903545,-97.169708,0,0,0,0,0,4,1,5,2,65,50,40,2.42871528,5,0
+175,308 Colony Street - Uncovered,74,"308 Colony Street, Winnipeg, MB, Canada, Winnipeg",R3C1W6,49.889481,-97.15118,0,0,2.25,2,18,1,2,8,10,110,90,50,1.103920627,4,1
+176,633 Lodge Avenue - Uncovered,97,"633 Lodge Avenue, Winnipeg, MB, Canada, Winnipeg",R3J0S9,49.880321,-97.273347,0,0,4,75,312,5,1,6,3,0,0,0,9.802453912,6,0
+177,1833 Pembina Highway - Guest,141,"1833 Pembina Highway, Winnipeg, MB, Canada, Winnipeg",R3T3X8,49.823337,-97.154146,1,1,0,0,0,3,1,5,2,50,35,25,8.056072647,5,0
+178,304 Stradbrook Avenue - Uncovered,104,304 Stradbrook Avenue ,R3L0J6,49.879881,-97.138605,0,0,1.603575758,0,0,0,1,5,2,99,75,25,1.689754124,5,0
+179,585 William Avenue - Uncovered,37,"585 William Avenue, Winnipeg, MB, Canada, Winnipeg",R3A0K1,49.903467,-97.152877,0,0,2.75,5,37,5,1,5,2,70,65,50,1.392106916,5,0
+180,60 Edmonton Street - Uncovered,70,60 Edmonton Street ,R3C1P7,49.885881,-97.143652,0,0,1.603575758,0,0,0,1,5,2,0,0,0,1.088313369,5,1
+181,287 Young Street - Uncovered,77,"287 Young Street, Winnipeg, MB, Canada, Winnipeg",R3C1Z1,49.888447,-97.155009,0,0,0,0,0,3,1,5,2,95,65,40,1.396576768,5,0
+182,590 University Crescent - Monthly,138,"Converge Community Church, University Crescent, Winnipeg, MB, Canada, Winnipeg",R3T2N8,49.802747,-97.135216,0,0,4.5,16,730,10,1,5,9,1,65,1,10.26924734,5,0
+183,516 Hargrave - Uncovered,41,"516 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3A0X8,49.8997,-97.144081,0,0,0.5,1,4,4,1,1,4,0,0,0,0.653353664,1,0
+184,516 Hargrave - Uncovered,41,"516 Hargrave Street, Winnipeg, MB, Canada, Winnipeg",R3A0X8,49.8997,-97.144081,0,0,0.5,0,0,1,1,1,4,0,0,0,0.653353664,1,0
+185,424 Gertrude Avenue - Uncovered,110,"424 Gertrude Avenue, Winnipeg, MB, Canada, Winnipeg",R3L0M6,49.87621,-97.14233,0,0,5,48,107,8,2,8,6,105,80,40,2.116241862,4,0
+186,925 Chancellor Drive - Standard Uncovered,134,925 Chancellor Drive ,R3T2J9,49.816749,-97.154491,0,0,1.603575758,0,0,0,1,5,2,0,0,0,8.785254602,5,0
+187,1833 Pembina Highway - Uncovered,141,1833 Pembina Highway,R3T3X8,49.823975,-97.154209,0,0,1.603575758,0,0,0,1,5,2,50,35,25,7.986468099,5,0
