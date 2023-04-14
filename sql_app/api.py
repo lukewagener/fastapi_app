@@ -82,29 +82,29 @@ def read_prices(zoneGuid: str, db: Session = Depends(get_db)) -> any:
     
     dict_prices = json.loads(str_prices)
     print("DICT", dict_prices)
-    latitude = db_prices[0]['latitude']
+    latitude = db_prices[0][0]
+    print(latitude)
+    longitude = db_prices[0][1]
 
-    longitude = db_prices[0]['longitude']
+    coveredParking = db_prices[0][2]
 
-    coveredParking = db_prices[0]['coveredParking']
+    electricCharger = db_prices[0][3]
 
-    electricCharger = db_prices[0]['electricCharger']
-
-    rating = db_prices[0]['rating']
+    rating = db_prices[0][4]
    
-    reservedHours = db_prices[0]['reservedHours']
+    reservedHours = db_prices[0][5]
   
-    spotCount = db_prices[0]['spotCount']
+    spotCount = db_prices[0][6]
 
-    rateDaily = db_prices[0]['rateDaily']
+    rateDaily = db_prices[0][7]
 
-    rateEvening = db_prices[0]['rateEvening']
+    rateEvening = db_prices[0][8]
 
-    rateFull = db_prices[0]['rateFull']
+    rateFull = db_prices[0][9]
 
-    commuter = db_prices[0]['commuter']
+    commuter = db_prices[0][10]
  
-    eveningsWeekends = db_prices[0]['eveningsWeekends']
+    eveningsWeekends = db_prices[0][11]
 
     dict_prices = {
         'Latitude': latitude,
@@ -122,7 +122,7 @@ def read_prices(zoneGuid: str, db: Session = Depends(get_db)) -> any:
         'UtilizationByHours': 0,
         'Bus_Nearby': 0
     }
-
+    print("DICT2", dict_prices)
     prices = dp(dict_prices)
     print(prices)
     print("HOURLY", prices['hourly_price']),
