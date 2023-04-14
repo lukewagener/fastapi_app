@@ -38,14 +38,12 @@ def get_db():
 @app.get("/spots", response_model=list[schemas.Spots])
 async def read_spots(skip: int = 0, db: Session = Depends(get_db)):  
     spots = read.get_spots(db, skip=skip)
-    print(spots)
     return spots
 
 # Selected/Clicked GRYD Marker
 @app.get("/zones/{zoneGuid}", response_model=list[schemas.Zones])
 def read_zone(zoneGuid: str, db: Session = Depends(get_db)):
     db_zone = read.get_zones_by_spot(db, zoneGuid=zoneGuid)
-    print(db_zone)
     return db_zone
 
 
@@ -83,7 +81,7 @@ def read_prices(zoneGuid: str, db: Session = Depends(get_db)) -> any:
     # convert json to python dict
     
     dict_prices = json.loads(str_prices)
-
+    print("DICT", dict_prices)
     latitude = db_prices[0]['latitude']
 
     longitude = db_prices[0]['longitude']
@@ -133,63 +131,4 @@ def read_prices(zoneGuid: str, db: Session = Depends(get_db)) -> any:
     return [
         DynamicBase(rateHourly=prices['hourly_price'], rateDaily=prices['daily_price'], rateWeekly=prices['weekly_price'], rateMonthly=prices['monthly_price'], Std_deviation=prices['Std_deviation'])
     ]
-    print(db_prices)
     
-    # convert json to python string
-    str_prices = json.dumps(db_prices, default=str)
-    # print(str_prices)
-
-    # convert json to python dict
-    dict_prices = json.loads(str_prices)
-    # print(str_prices['latitude'])
-    # print("dict", dict_prices)
-    # dict_keys = list(dict_prices.keys())
-    # print(dict_keys)
-    # print(dict_prices)
-    
-
-    latitude = db_prices[0]['latitude']
-    print(latitude)
-    longitude = db_prices[0]['longitude']
-    print(longitude)
-    coveredParking = db_prices[0]['coveredParking']
-    print(coveredParking)
-    electricCharger = db_prices[0]['electricCharger']
-    print(electricCharger)
-    rating = db_prices[0]['rating']
-    print(rating)
-    reservedHours = db_prices[0]['reservedHours']
-    print(reservedHours)
-    spotCount = db_prices[0]['spotCount']
-    print(spotCount)
-    rateDaily = db_prices[0]['rateDaily']
-    print(rateDaily)
-    rateEvening = db_prices[0]['rateEvening']
-    print(rateEvening)
-    rateFull = db_prices[0]['rateFull']
-    print(rateFull)
-    commuter = db_prices[0]['commuter']
-    print(commuter)
-    eveningsWeekends = db_prices[0]['eveningsWeekends']
-    print(eveningsWeekends)
-    
-    dict_prices = {
-        'latitude': latitude,
-        'longitude': longitude,
-        'coveredParking': coveredParking,
-        'electricCharger': electricCharger,
-        'rating': rating,
-        'reservedHours': reservedHours,
-        'spotCount': spotCount,
-        'rateDaily': rateDaily,
-        'rateEvening': rateEvening,
-        'rateFull': rateFull,
-        'commuter': commuter,
-        'eveningsWeekends': eveningsWeekends
-    }
-    print(dict_prices)
-    print(list(dict_prices.keys()))
-    print(list(dict_prices.values()))
-
-    prices = dp(dict_prices)
-    return prices

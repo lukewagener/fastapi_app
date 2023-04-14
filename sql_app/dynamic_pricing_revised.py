@@ -12,6 +12,7 @@ import pickle
 import joblib
 import pandas as pd
 import json
+import numpy as np
 #from pandas import json_normalize
 
 #for cheching if the datatype is string
@@ -24,17 +25,15 @@ from pandas.api.types import is_string_dtype
 from haversine import haversine
 
 #Creating reference to saved model file
-filename = "gryd_model.pkl"
+filename = "D:\Project Space\GrydPark\GrydBackend\sql_app\prediction_model.pkl"
 
-#loading csv file into pandas dataframe
-data = pd.read_csv('Processed_Parking_Data.csv',index_col=0)
+# Load the model and metadata from the pickle file
+with open('D:\Project Space\GrydPark\GrydBackend\sql_app\prediction_model.pkl', 'rb') as f:
+  model = pickle.load(f)
+  rmse_score = pickle.load(f)
 
-# Coordinates of centre of winnipeg
-data['lon_win'] = -97.138451
-data['lat_win'] = 49.895077
-
-#Printing dataframe
-data.head()
+# Access the RMSE value from the metadata
+rmse = rmse_score['rmse']
 
 #Defining Haversine function to calculate distance between two quardinate points
 from math import radians, cos, sin, asin, sqrt
@@ -56,41 +55,24 @@ def custom_haversine(k):
     
     return km
 
-#pinting column names
-#Some of the columns in the list below are not expected by the model
-data.columns
-
-# Creating example string to test function
-
-#Extract 4th row from dataframe
-d = data.iloc[5]
-
-#Converting pandas dataframe into JSON string
-js = d.to_json(orient ='index')
-print(js)
-
-#converting dataframe to JSON dict
-jd = json.loads(js)
-print(jd)
-
 #Dynamic price prediction function  
-def dynamic_pricing(features):
+def dynamic_pricing(features, daily_ratio = 4.8, weekly_ratio = 4.8*5, monthly_ratio = 4.8*25):
   
-  #Converting 1D Json dictionary into 2D Json dictionary
+  #Converting 1D python dictionary into 2D Json dictionary
   features = {'0': features}
 
-  #Converting 2D Json Dictionary into pandas dataframe
+  #Converting 2D python Dictionary into pandas dataframe
   data = pd.DataFrame.from_dict(features, orient = 'index')
-
-  #Rename colummns
-  data.columns  = ['Latitude','Longitude','Covered_Parking', 'Electric_charger' , 'Rating','Reserved_hours','Spot_Count','Daily_Rate','Evening_Rate','24/7','Commuter','Eveninng_and_Weekends']
 
   #Extracting desired features
   #these are the columns that are expected by the machine learning model for presiction
-  data = data.loc[:, ['Latitude','Longitude','Covered_Parking', 'Electric_charger', 'Rating', 'Reserved_hours', 'Spot_Count', 'Daily_Rate', 'Evening_Rate', '24/7', 'Commuter', 'Eveninng_and_Weekends']]
+  data = data.loc[:, ['Latitude','Longitude','Covered_Parking', 'Electric_charger', 'Rating', 'Reserved_hours', 'Spot_Count','UtilizationByHours','Bus_Nearby']]
+
+  #Rename colummns
+  data.columns  = ['Latitude','Longitude','Covered_Parking', 'Electric_charger' , 'Rating','Reserved_hours','Spot_Count','UtilizationByHours','Bus_Nearby']
 
   #Checking number of features
-  if len(data.axes[1])!=12:
+  if len(data.axes[1])!=9:
     print("ERROR: No suitable number of features for machine learning model.")
 
   # Coordinates of centre of winnipeg
@@ -101,39 +83,33 @@ def dynamic_pricing(features):
   data['Distance_from_center'] =data.apply(custom_haversine, axis = 1)
 
   #Validation
+  if ('Longitude' not in data) or data.Longitude.isnull().any() or is_string_dtype(data['Longitude']):
+    data['Longitude'] = 0
+
+  if ('Latitude' not in data) or data.Latitude.isnull().any() or is_string_dtype(data['Latitude']):
+    data['Latitude'] = 0
+
   if ('Covered_Parking' not in data) or data.Covered_Parking.isnull().any() or is_string_dtype(data['Covered_Parking']) or (data['Covered_Parking'][0]<0) or (data['Covered_Parking'][0]>1):
     data['Covered_Parking'] = 0
 
-  if 'Electric_charger' not in data or data.Electric_charger.isnull().any() or is_string_dtype(data['Electric_charger']):
+  if 'Electric_charger' not in data or data.Electric_charger.isnull().any() or is_string_dtype(data['Electric_charger']) or (data['Electric_charger'][0]<0) or (data['Electric_charger'][0]>1):
     data['Electric_charger'] = 0
 
   if 'Rating' not in data or data.Rating.isnull().any() or is_string_dtype(data['Rating']):
     data['Rating'] = 0
 
-  if 'Reserved_hours' not in data or data.Reserved_hours.isnull().any() or is_string_dtype(data['Covered_Parking']):
+  if 'Reserved_hours' not in data or data.Reserved_hours.isnull().any() or is_string_dtype(data['Reserved_hours']) or (data['Reserved_hours'][0]<0):
     data['Reserved_hours'] = 0
 
-  if 'Spot_Count' not in data or data.Spot_Count.isnull().any() or is_string_dtype(data['Spot_Count']):
+  if 'Spot_Count' not in data or data.Spot_Count.isnull().any() or is_string_dtype(data['Spot_Count']) or (data['Spot_Count'][0]<0):
     data['Spot_Count'] = 0
 
-  if 'Daily_Rate' not in data or data.Daily_Rate.isnull().any() or is_string_dtype(data['Daily_Rate']):
-    data['Daily_Rate'] = 0
-
-  if 'Evening_Rate' not in data or data.Evening_Rate.isnull().any() or is_string_dtype(data['Evening_Rate']):
-    data['Evening_Rate'] = 0
-
-  if '24/7' not in data or data['24/7'].isnull().any() or is_string_dtype(data['24/7']):
-    data['24/7'] = 0
-
-  if 'Commuter' not in data or data.Commuter.isnull().any() or is_string_dtype(data['Commuter']):
-    data['Commuter'] = 0
-
-  if 'Eveninng_and_Weekends' not in data or data.Eveninng_and_Weekends.isnull().any() or is_string_dtype(data['Eveninng_and_Weekends']):
-    data['Eveninng_and_Weekends'] = 0
+  if ('UtilizationByHours' not in data) or data.UtilizationByHours.isnull().any() or is_string_dtype(data['UtilizationByHours']) or (data['UtilizationByHours'][0]<0):
+    data['UtilizationByHours'] = 0
  
   #Extracting desired features
   #these are the columns that are expected by the machine learning model for presiction
-  data = data.loc[:, ['Covered_Parking', 'Electric_charger', 'Rating', 'Reserved_hours', 'Spot_Count', 'Daily_Rate', 'Evening_Rate', '24/7', 'Commuter', 'Eveninng_and_Weekends', 'Distance_from_center']]
+  data = data.loc[:, ['Covered_Parking', 'Electric_charger', 'Rating', 'Reserved_hours', 'Spot_Count','UtilizationByHours', 'Distance_from_center','Bus_Nearby']]
 
   #Rename colummns
   #data.columns  = ['Covered_Parking', 'Electric_charger' , 'Rating','Reserved_hours','Spot_Count','Daily_Rate','Evening_Rate','24/7','Commuter','Eveninng_and_Weekends']
@@ -147,15 +123,27 @@ def dynamic_pricing(features):
   #making predictions from trained model
   hourly = loaded_model.predict(data)
 
-  #Hard-coding ratios
-  daily_ratio = 4.8
-  weekly_ratio = 4.8*5
-  monthly_ratio = 4.8*25
-
   #Computing prices
   daily = daily_ratio * hourly
   weekly = weekly_ratio * hourly
   monthly = monthly_ratio * hourly
 
-  #returning predicted 
-  return(hourly,daily,weekly,monthly)
+  #Root mean square error
+  std_dev = rmse
+
+  my_dict = {
+    'hourly_price' : hourly[0],
+    'daily_price': daily[0],
+    'weekly_price': weekly[0],
+    'monthly_price': monthly[0],
+    'Std_deviation': std_dev
+  }
+
+  return(my_dict)
+
+#calling the function to predict price
+#predicted_price = dynamic_pricing(p_dict)
+
+#printing the predicted price
+#print(predicted_price)
+
