@@ -4,5 +4,6 @@
 sql_app/__pycache__/
 /__pycache__
 /venv
+*.env
 # *.sql
 # *.csv

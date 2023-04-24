@@ -1,5 +1,7 @@
 from pydantic import BaseModel
 
+# Spots schema
+
 class SpotsBase(BaseModel):
     propertyGuid: str
     zoneGuid: str
@@ -23,6 +25,7 @@ class Spots(SpotsBase):
     class Config:
         orm_mode = True
 
+# Zones schema
 
 class ZonesBase(BaseModel):
     zoneGuid: str
@@ -38,6 +41,8 @@ class ZonesBase(BaseModel):
 class Zones(ZonesBase):
     class Config:
         orm_mode = True
+
+# Impark schema
 
 class ImparkBase(BaseModel):
     id: int
@@ -60,6 +65,8 @@ class Impark(ImparkBase):
     class Config:
         orm_mode = True
 
+# Features schema
+
 class FeaturesBase(BaseModel):
     latitude: float
     longitude: float
@@ -78,15 +85,16 @@ class Features(FeaturesBase):
     class Config:
         orm_mode = True
 
-# class DynamicBase(BaseModel):
-#     rateHourly: float
-#     rateDaily: float
-#     rateEvening: float
-#     rateFull: float
-#     Std_deviation: float
+# Dynamic pricing schema
 
+class DynamicBase(BaseModel):
+    rateHourly: float
+    rateDaily: float
+    rateWeekly: float
+    rateMonthly: float
+    Std_deviation: float
 
-# class Dynamic(DynamicBase):
-#     class Config:
-#         orm_mode = True
+    class Config:
+        allow_population_by_field_name = True
+
 
