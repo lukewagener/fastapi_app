@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 
 from .database import Base
 
+# Spots model
 
 class Spots(Base):
     __tablename__ = "spots"
@@ -23,6 +24,7 @@ class Spots(Base):
     reservedHours = Column(Integer)
     spotCount = Column(Integer)
 
+# Zones model
 
 class Zones(Base):
     __tablename__ = "zones"
@@ -39,6 +41,7 @@ class Zones(Base):
 
     spots = relationship("Spots", backref="zones")
 
+# Impark model
 
 class Impark(Base):
     __tablename__="impark"
