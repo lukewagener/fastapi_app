@@ -25,10 +25,10 @@ from pandas.api.types import is_string_dtype
 from haversine import haversine
 
 #Creating reference to saved model file
-filename = "D:\Project Space\GrydPark\GrydBackend\sql_app\prediction_model.pkl"
+filename = "E:\Project Space\GrydPark\GrydBackend\sql_app\prediction_model.pkl"
 
 # Load the model and metadata from the pickle file
-with open('D:\Project Space\GrydPark\GrydBackend\sql_app\prediction_model.pkl', 'rb') as f:
+with open('E:\Project Space\GrydPark\GrydBackend\sql_app\prediction_model.pkl', 'rb') as f:
   model = pickle.load(f)
   rmse_score = pickle.load(f)
 

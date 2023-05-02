@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 
 # Load hidden environment variables
+
 load_dotenv()
 
 # Database URL
